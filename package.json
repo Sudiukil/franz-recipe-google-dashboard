@@ -1,7 +1,7 @@
 {
   "id": "google-dashboard",
   "name": "Google Dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Google Dashboard",
   "main": "index.js",
   "author": "Quentin Sonrel <sudiukil@gmx.fr>",

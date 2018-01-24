@@ -1,31 +1,32 @@
 const path = require('path');
 
 module.exports = (Franz) => {
+  function cleanPathname(pathname) {
+    if(pathname.substr(-1) === '/') return str.substr(0, str.length-1);
+  }
 
   const handleLinks = function handleLinks() {
     const whitelist = [
-      "drive.google.com",
       "keep.google.com",
+      "drive.google.com",
       "myaccount.google.com",
       "mail.google.com",
-      "play.google.com",
-      "maps.google.fr",
-      "photos.google.com",
-      "translate.google.fr",
       "inbox.google.com",
+      "photos.google.com",
       "plus.google.com",
       "news.google.fr",
-      "docs.google.com",
-      "books.google.fr",
       "hangouts.google.com",
-      "classroom.google.com"
+      "/calendar",
+      "/contacts",
     ];
     const elems = document.querySelectorAll('a');
 
     elems.forEach(function(e) {
-      if(whitelist.includes(e.host)) e.onclick = function() {
-        location.href=this.href;
-        return false;
+      if(whitelist.includes(link.host) || whitelist.includes(cleanPathname(link.pathname))) {
+        e.onclick = function() {
+          location.href=this.href;
+          return false;
+        }
       }
     })
   }
