@@ -1,0 +1,12 @@
+{
+  "id": "google-dashboard",
+  "name": "Google Dashboard",
+  "version": "1.0.0",
+  "description": "Google Dashboard",
+  "main": "index.js",
+  "author": "Quentin Sonrel <sudiukil@gmx.fr>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://myaccount.google.com/dashboard"
+  }
+}
