@@ -2,7 +2,7 @@
 
 This is an unofficial Franz recipe for Google Dashboard.
 
-It allows to access many of the Google services and switch between them within only one Franz service.
+It allows access to many of the Google services and to switch between them within only one Franz service.
 
 ## Installation
 
