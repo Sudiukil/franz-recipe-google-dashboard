@@ -7,6 +7,6 @@ It allows access to many of the Google services and to switch between them withi
 ## Installation
 
 > $ cd ~/.config/Franz/recipes/dev/<br>
-> $ git clone https://sudiukil.info/gitea/Sudiukil/franz-recipe-google-dashboard
+> $ git clone https://github.com/Sudiukil/franz-recipe-google-dashboard
 
 Reload Franz and enjoy.
